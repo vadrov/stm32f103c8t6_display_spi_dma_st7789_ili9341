@@ -1,20 +1,15 @@
 /* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2023 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+/*  Copyright (C)2019-2023, VadRov, all right reserved.
+ *
+ *  Драйвер дисплея V1.4 для stm32f103x
+ *  Интерфейс дисплея spi. Поддержка DMA, CS и BLK (PWM)
+ *  Поддержка дисплеев контроллерах st7789, ili9341 и совместимых с ними
+ *
+ *  https://www.youtube.com/@VadRov
+ *  https://dzen.ru/vadrov
+ *  https://vk.com/vadrov
+ *  https://t.me/vadrov_channel
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
