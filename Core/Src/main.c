@@ -116,7 +116,7 @@ int main(void)
   									 LCD_DC_GPIO_Port,
   									 LCD_DC_Pin,
   									 LCD_CS_GPIO_Port,
-  									 LCD_CS_Pin         };
+									 LCD_CS_Pin         };
 
 #ifndef LCD_DYNAMIC_MEM
   LCD_Handler lcd1;

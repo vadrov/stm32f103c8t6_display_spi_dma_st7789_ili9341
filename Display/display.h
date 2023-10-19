@@ -102,11 +102,11 @@ typedef struct {
 	SPI_TypeDef *spi;
 	LCD_DMA_TypeDef dma_tx;
 	GPIO_TypeDef *reset_port;
-	uint16_t reset_pin;
+	uint32_t reset_pin;
 	GPIO_TypeDef *dc_port;
-	uint16_t dc_pin;
+	uint32_t dc_pin;
 	GPIO_TypeDef *cs_port;
-	uint16_t cs_pin;
+	uint32_t cs_pin;
 } LCD_SPI_Connected_data;
 
 //подсветка
@@ -115,7 +115,7 @@ typedef struct {
 	uint32_t channel_htim_bk;	//----------------------------- канал таймера
 
 	GPIO_TypeDef *blk_port;		//просто для включения и выключения подсветки, если htim_bk = 0 (без PWM, определен порт вывода)
-	uint16_t blk_pin;			//----------------------------------------------------------------------- пин порта
+	uint32_t blk_pin;			//----------------------------------------------------------------------- пин порта
 
 	uint8_t bk_percent;			//яркость подсветки для режима PWM, %
 								//либо 0 - подсветка отключена, > 0 подсветка включена, если если htim_bk = 0 (без PWM, определен порт вывода)
